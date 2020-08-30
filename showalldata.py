@@ -11,4 +11,4 @@ data = getDataFormJsonFile("db.json")
 
 def showAllData():
     for d in data['products']:
-            print(f"ID:{d['productId']} | Name:{d['productName']} | Price:{d['productPrice']} | Count:{d['productCount']} ")
+        print(f"ID:{d['productId']} | Name:{d['productName']} | Price:{d['productPrice']} | Count:{d['productCount']} ")

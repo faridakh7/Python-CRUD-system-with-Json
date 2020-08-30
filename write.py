@@ -8,11 +8,12 @@ def getDataFormJsonFile(_fileName):
 
 data = getDataFormJsonFile("db.json")
 
+
 def addNewData():
-    id=int(input("ID daxil edin: "))
-    name=input("Ad daxil edin: ")
-    price=int(input("Qiymet daxil edin: "))
-    count=int(input("Say daxil edin: "))
+    id = int(input("ID daxil edin: "))
+    name = input("Ad daxil edin: ")
+    price = int(input("Qiymet daxil edin: "))
+    count = int(input("Say daxil edin: "))
 
     product = {
         "productId": id,
@@ -22,6 +23,5 @@ def addNewData():
     }
     data['products'].append(product)
     with open("db.json", "w") as connect:
-        json.dump(data,connect)
-        print("Qeyd etdiyiniz parametrler databaseye daxil edildi")
-
+        json.dump(data, connect)
+        print("Qeyd etdiyiniz parametrlər databaseyə daxil əlavə olundu!")

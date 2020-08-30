@@ -23,4 +23,3 @@ def updateDataFromId():
     with open("db.json", "w") as connect:
         json.dump(data, connect)
         print(f"ID-si {_id} olan datanın məlumatları müvəffəqiyyətlə yeniləndi!")
-

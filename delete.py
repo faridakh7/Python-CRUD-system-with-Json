@@ -8,6 +8,7 @@ def getDataFormJsonFile(_fileName):
 
 data = getDataFormJsonFile("db.json")
 
+
 def delProductbyName():
     _id = int(input("ID daxil edin: "))
     finder = False
@@ -15,11 +16,9 @@ def delProductbyName():
         if product['productId'] == _id:
             data['products'].pop(data['products'].index(product))
             finder = True
+            print(f"{_id} -Nömrəli ID databaseden silindi")
             break
     with open("db.json", "w") as connect:
-        json.dump(data,connect)
-        print(f"{_id} -Nomreli ID databaseden silindi")
+        json.dump(data, connect)
     if finder == False:
-        print(f"{_id} -Nomreli ID tapilmadi")
-
-
+        print(f"{_id} -Nömrəli ID tapılmadi")
