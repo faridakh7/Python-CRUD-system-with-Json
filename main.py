@@ -1,5 +1,5 @@
 from delete import *
-from write import *
+from addnewdata import *
 from read import *
 from update import *
 from showalldata import *
